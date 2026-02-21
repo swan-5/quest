@@ -10,6 +10,3 @@ for i in range(n):
 
 
 print(l)
-
-
-
