@@ -18,12 +18,15 @@ for i in range(len(l)):
         if l[i] == 1:
                 t1 += 1
                 if t1 > t2 :
-                        k1[i] = ls[i] 
-                else : k1[i] = 0
+                        k1.append(ls[i])
+                else : k1.append(0)
         else : 
                 t2 += 1
                 if t2 > t1 :
-                        k2[i] = ls[i]
-                else : k2[i] = 0
+                        k2.append(ls[i])
+                else : k2.append(0)
+ks = 2880- sum(k1)
+kq = sum(k2)
+print (f'{ks//60:02d}:{ks%60:02d}') 
 
-print 
+print (f'{kq//60:02d}:{kq%60:02d}') 
