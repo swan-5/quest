@@ -11,7 +11,7 @@ for i in range(n):
         l.append(t)
         m,s = str(a).split(':')
         m,s = int(m), int(s)
-        ls.append(m*60 + s) #초로 변환 
+        ls.append(m*60 + s) #초로 변환 ver6
         
 #농구는 48분동안 진행된다. 
 for i in range(len(l)):
